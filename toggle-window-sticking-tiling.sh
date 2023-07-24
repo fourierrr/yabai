@@ -4,7 +4,7 @@
 # Only works when the workspace layout is bsp, i.e., the windows in it are tiled.
 
 spaceType=$(yabai -m query --spaces --space | jq .type)
-if [ $spaceType = '"bsp"' ]; then
+if [[ $spaceType = '"bsp"' ]]; then
 
   read -r id sticky <<< $(echo $(yabai -m query --windows --window | jq '.id, ."is-sticky"'))
   tmpfile=/tmp/yabai-tiling-floating-toggle/sticky-$id

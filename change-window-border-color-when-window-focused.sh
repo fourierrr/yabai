@@ -14,8 +14,8 @@ elif [[ "true" = $sticky ]]; then
   yabai -m config active_window_border_color 0xfcDD87AE
 else
   # yabai -m config active_window_border_color 0xfcFFEE58
-  # yabai -m config active_window_border_color   0xffe1e3e4
-  yabai -m config active_window_border_color   0xff8783c8
+  yabai -m config active_window_border_color   0xffe1e3e4
+  # yabai -m config active_window_border_color   0xff8783c8
 fi
 
 

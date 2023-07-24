@@ -23,7 +23,7 @@ done
 
 if [[ -n ${next_display_index:+x} ]]; then
   index=${all_display_indices_array[next_display_index]}
-  if [ -n "$send_window" ]; then
+  if [[ -n "$send_window" ]]; then
     yabai -m window --display $index
   fi
   yabai -m display --focus $index
